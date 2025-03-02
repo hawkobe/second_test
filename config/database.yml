@@ -86,6 +86,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
+    url: <%= ENV["DATABASE_URL"] %>
     database: second_test_production
   cache:
     <<: *primary_production
