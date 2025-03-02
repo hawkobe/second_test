@@ -1,1 +1,1 @@
-web: rails db:migrate && bin/rails server -b 0.0.0.0 -p $PORT
+web: rails db:migrate && bin/rails server -b 0.0.0.0:$PORT
